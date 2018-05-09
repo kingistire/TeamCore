@@ -15,6 +15,9 @@ namespace prototype1
         public Form1()
         {
             InitializeComponent();
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.Hide();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -22,24 +25,17 @@ namespace prototype1
 
         }
 
-        private void _1loading1_Click(object sender, EventArgs e)
-        {
-            
-
-        }
-
-
-
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
             Login login = new Login();
             login.Show();
             this.Hide();
         }
 
-        private void _1loading1_Load(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-
+            pictureBox2.Visible = true;
+            pictureBox1.Hide();
         }
     }
 }
