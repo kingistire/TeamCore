@@ -19,7 +19,13 @@ namespace prototype1
 
         private void button1_Click_1(object sender, EventArgs e)
         {
+            Form myForm = button1.FindForm();
+            // Set the text and color of the form containing the Button.
+
+            myForm.BackColor = Color.Red;
+
             
+
         }
     }
 }
