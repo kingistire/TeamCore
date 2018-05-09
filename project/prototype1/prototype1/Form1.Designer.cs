@@ -29,12 +29,20 @@
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
+<<<<<<< HEAD
             this.loading_panel = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.loadingTOlogin = new System.Windows.Forms.Button();
             this.login_panel = new System.Windows.Forms.Panel();
             this.loading_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+=======
+            this.button2 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+>>>>>>> 8ad00678e8e2fab84d0fff9bdc904bdfdf53151a
             this.SuspendLayout();
             // 
             // button1
@@ -46,8 +54,9 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
+<<<<<<< HEAD
             // loading_panel
             // 
             this.loading_panel.Controls.Add(this.loadingTOlogin);
@@ -57,10 +66,22 @@
             this.loading_panel.Name = "loading_panel";
             this.loading_panel.Size = new System.Drawing.Size(1142, 638);
             this.loading_panel.TabIndex = 2;
+=======
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(643, 222);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+>>>>>>> 8ad00678e8e2fab84d0fff9bdc904bdfdf53151a
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::prototype1.Properties.Resources._1_Loading_Screen;
+<<<<<<< HEAD
             this.pictureBox1.Location = new System.Drawing.Point(5, -1);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1134, 636);
@@ -84,11 +105,28 @@
             this.login_panel.Name = "login_panel";
             this.login_panel.Size = new System.Drawing.Size(1139, 639);
             this.login_panel.TabIndex = 2;
+=======
+            this.pictureBox1.Location = new System.Drawing.Point(-2, -1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(837, 501);
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::prototype1.Properties.Resources._2_Login;
+            this.pictureBox2.Location = new System.Drawing.Point(-2, -1);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(860, 516);
+            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabStop = false;
+>>>>>>> 8ad00678e8e2fab84d0fff9bdc904bdfdf53151a
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(1142, 638);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.loading_panel);
@@ -98,16 +136,35 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.loading_panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+=======
+            this.ClientSize = new System.Drawing.Size(870, 553);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBox2);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "Form1";
+            this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+>>>>>>> 8ad00678e8e2fab84d0fff9bdc904bdfdf53151a
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private System.Windows.Forms.Button button1;
+<<<<<<< HEAD
         private System.Windows.Forms.Panel loading_panel;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button loadingTOlogin;
         private System.Windows.Forms.Panel login_panel;
+=======
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+>>>>>>> 8ad00678e8e2fab84d0fff9bdc904bdfdf53151a
     }
 }
 

@@ -20,8 +20,14 @@ namespace prototype1
         public Form1()
         {
             InitializeComponent();
+<<<<<<< HEAD
             loading_panel.BringToFront();
             
+=======
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.Hide();
+>>>>>>> 8ad00678e8e2fab84d0fff9bdc904bdfdf53151a
         }
 
         
@@ -31,6 +37,7 @@ namespace prototype1
             loading_panel.Visible = false;
 
         }
+<<<<<<< HEAD
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -41,15 +48,26 @@ namespace prototype1
 
 
         private void button1_Click(object sender, EventArgs e)
+=======
+
+        private void Button1_Click(object sender, EventArgs e)
+>>>>>>> 8ad00678e8e2fab84d0fff9bdc904bdfdf53151a
         {
             Login login = new Login();
             login.Show();
             this.Hide();
         }
 
+<<<<<<< HEAD
         private void loadingTOlogin_Click(object sender, EventArgs e)
         {
             login_panel.BringToFront();
+=======
+        private void button2_Click(object sender, EventArgs e)
+        {
+            pictureBox2.Visible = true;
+            pictureBox1.Hide();
+>>>>>>> 8ad00678e8e2fab84d0fff9bdc904bdfdf53151a
         }
     }
 }
