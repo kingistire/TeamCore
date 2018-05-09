@@ -16,5 +16,11 @@ namespace prototype1
         {
             InitializeComponent();
         }
+
+        private void login_Load(object sender, EventArgs e)
+        {
+            Button button = new Button();
+            button.Location = new Point (50, 50);
+        }
     }
 }

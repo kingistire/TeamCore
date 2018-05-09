@@ -21,5 +21,25 @@ namespace prototype1
         {
 
         }
+
+        private void _1loading1_Click(object sender, EventArgs e)
+        {
+            
+
+        }
+
+
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Hide();
+        }
+
+        private void _1loading1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
