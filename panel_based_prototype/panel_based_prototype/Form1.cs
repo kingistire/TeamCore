@@ -46,34 +46,33 @@ namespace panel_based_prototype
         private void JD27042018testCompleteButton1_Click(object sender, EventArgs e)
         {
             generalTestPanel.BringToFront();
+            aLittle.Hide();
+            aLot.Hide();
             Form3 f3 = new Form3();
             f3.Show();
-            this.Hide();
-            Button selectImage = new Button();
-            selectImage.Text = "Select The Image Above";
+            Button button = new Button();
+            button.Text = "Select The Image Above";
             selectImage.BringToFront();
-            selectImage.Location = new Point(100, 100);
-            selectImage.Dock = DockStyle.Fill;
-            selectImage.Show();
-            selectImage.Visible = true;
+            selectImage.Controls.Add(button);
+            button.Click += new EventHandler(selectImage_Click);
+            button.Dock = DockStyle.Fill;
             MessageBox.Show("Glimglag");
-
-            Button aLittle = new Button();
-            Button aLot = new Button();
-            aLittle.BringToFront();
-            aLot.BringToFront();
-            aLittle.Visible = true;
-            aLot.Visible = true;
         }
 
         private void selectImage_Click(object sender, EventArgs e)
         {
-            Button aLittle = new Button();
-            Button aLot = new Button();
-            aLittle.BringToFront();
-            aLot.BringToFront();
-            aLittle.Visible = true;
-            aLot.Visible = true;
+            Button aLittleBtn = new Button();
+            Button aLotBtn = new Button();
+            aLotBtn.Text = "A Lot";
+            aLittleBtn.Text = "A Little";
+            aLittle.Show();
+            aLot.Show();
+            aLittleBtn.Visible = true;
+            aLotBtn.Visible = true;
+            aLittleBtn.Dock = DockStyle.Fill;
+            aLotBtn.Dock = DockStyle.Fill;
+            aLot.Controls.Add(aLotBtn);
+            aLittle.Controls.Add(aLittleBtn);
         }
 
         private void JDBackButton_Click(object sender, EventArgs e)
