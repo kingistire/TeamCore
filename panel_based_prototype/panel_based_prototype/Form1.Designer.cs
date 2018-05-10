@@ -32,22 +32,22 @@
             this.loadingTOlogin = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.loginPanel2no1 = new System.Windows.Forms.Panel();
+            this.loginLoginButton = new System.Windows.Forms.Button();
             this.loginPassEnterLabel = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.loginLoginButton = new System.Windows.Forms.Button();
             this.allProfilePage1no1 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.profilePageOpenJD = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.intervieweeProfilePageJD1 = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.JDView1032018test1 = new System.Windows.Forms.Button();
-            this.JD27042018testCompleteButton1 = new System.Windows.Forms.Button();
             this.JDBackButton = new System.Windows.Forms.Button();
+            this.JD27042018testCompleteButton1 = new System.Windows.Forms.Button();
+            this.JDView1032018test1 = new System.Windows.Forms.Button();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.generalTestPanel = new System.Windows.Forms.Panel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.JDTestResultsPanel = new System.Windows.Forms.Panel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.JDTestReturnToProfileButton = new System.Windows.Forms.Button();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.loadingPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.loginPanel2no1.SuspendLayout();
@@ -67,15 +67,17 @@
             this.loadingPanel.Controls.Add(this.loadingTOlogin);
             this.loadingPanel.Controls.Add(this.pictureBox1);
             this.loadingPanel.Location = new System.Drawing.Point(0, 0);
+            this.loadingPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.loadingPanel.Name = "loadingPanel";
-            this.loadingPanel.Size = new System.Drawing.Size(1143, 748);
+            this.loadingPanel.Size = new System.Drawing.Size(762, 486);
             this.loadingPanel.TabIndex = 0;
             // 
             // loadingTOlogin
             // 
-            this.loadingTOlogin.Location = new System.Drawing.Point(248, 114);
+            this.loadingTOlogin.Location = new System.Drawing.Point(165, 74);
+            this.loadingTOlogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.loadingTOlogin.Name = "loadingTOlogin";
-            this.loadingTOlogin.Size = new System.Drawing.Size(646, 473);
+            this.loadingTOlogin.Size = new System.Drawing.Size(431, 307);
             this.loadingTOlogin.TabIndex = 1;
             this.loadingTOlogin.Text = "button1";
             this.loadingTOlogin.UseVisualStyleBackColor = true;
@@ -85,8 +87,9 @@
             // 
             this.pictureBox1.Image = global::panel_based_prototype.Properties.Resources._1_Loading_Screen;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1143, 748);
+            this.pictureBox1.Size = new System.Drawing.Size(762, 486);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -97,16 +100,29 @@
             this.loginPanel2no1.Controls.Add(this.loginPassEnterLabel);
             this.loginPanel2no1.Controls.Add(this.pictureBox2);
             this.loginPanel2no1.Location = new System.Drawing.Point(0, 0);
+            this.loginPanel2no1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.loginPanel2no1.Name = "loginPanel2no1";
-            this.loginPanel2no1.Size = new System.Drawing.Size(1143, 745);
+            this.loginPanel2no1.Size = new System.Drawing.Size(762, 484);
             this.loginPanel2no1.TabIndex = 1;
+            // 
+            // loginLoginButton
+            // 
+            this.loginLoginButton.Location = new System.Drawing.Point(431, 263);
+            this.loginLoginButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.loginLoginButton.Name = "loginLoginButton";
+            this.loginLoginButton.Size = new System.Drawing.Size(193, 25);
+            this.loginLoginButton.TabIndex = 4;
+            this.loginLoginButton.Text = "Log In Boi";
+            this.loginLoginButton.UseVisualStyleBackColor = true;
+            this.loginLoginButton.Click += new System.EventHandler(this.loginLoginButton_Click);
             // 
             // loginPassEnterLabel
             // 
             this.loginPassEnterLabel.AutoSize = true;
-            this.loginPassEnterLabel.Location = new System.Drawing.Point(653, 340);
+            this.loginPassEnterLabel.Location = new System.Drawing.Point(435, 221);
+            this.loginPassEnterLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.loginPassEnterLabel.Name = "loginPassEnterLabel";
-            this.loginPassEnterLabel.Size = new System.Drawing.Size(269, 20);
+            this.loginPassEnterLabel.Size = new System.Drawing.Size(192, 13);
             this.loginPassEnterLabel.TabIndex = 3;
             this.loginPassEnterLabel.Text = "                        Enter Password             ";
             this.loginPassEnterLabel.Click += new System.EventHandler(this.loginPassEnterLabel_Click);
@@ -115,50 +131,44 @@
             // 
             this.pictureBox2.Image = global::panel_based_prototype.Properties.Resources._2_Login;
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1146, 745);
+            this.pictureBox2.Size = new System.Drawing.Size(764, 484);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
-            // 
-            // loginLoginButton
-            // 
-            this.loginLoginButton.Location = new System.Drawing.Point(646, 405);
-            this.loginLoginButton.Name = "loginLoginButton";
-            this.loginLoginButton.Size = new System.Drawing.Size(290, 39);
-            this.loginLoginButton.TabIndex = 4;
-            this.loginLoginButton.Text = "Log In Boi";
-            this.loginLoginButton.UseVisualStyleBackColor = true;
-            this.loginLoginButton.Click += new System.EventHandler(this.loginLoginButton_Click);
             // 
             // allProfilePage1no1
             // 
             this.allProfilePage1no1.Controls.Add(this.profilePageOpenJD);
             this.allProfilePage1no1.Controls.Add(this.pictureBox3);
             this.allProfilePage1no1.Location = new System.Drawing.Point(0, 0);
+            this.allProfilePage1no1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.allProfilePage1no1.Name = "allProfilePage1no1";
-            this.allProfilePage1no1.Size = new System.Drawing.Size(1146, 745);
+            this.allProfilePage1no1.Size = new System.Drawing.Size(764, 484);
             this.allProfilePage1no1.TabIndex = 5;
+            // 
+            // profilePageOpenJD
+            // 
+            this.profilePageOpenJD.Location = new System.Drawing.Point(609, 139);
+            this.profilePageOpenJD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.profilePageOpenJD.Name = "profilePageOpenJD";
+            this.profilePageOpenJD.Size = new System.Drawing.Size(50, 21);
+            this.profilePageOpenJD.TabIndex = 1;
+            this.profilePageOpenJD.Text = "Open";
+            this.profilePageOpenJD.UseVisualStyleBackColor = true;
+            this.profilePageOpenJD.Click += new System.EventHandler(this.profilePageOpenJD_Click);
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::panel_based_prototype.Properties.Resources._3_Profile_Screen;
             this.pictureBox3.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(1146, 742);
+            this.pictureBox3.Size = new System.Drawing.Size(764, 482);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 0;
             this.pictureBox3.TabStop = false;
-            // 
-            // profilePageOpenJD
-            // 
-            this.profilePageOpenJD.Location = new System.Drawing.Point(913, 214);
-            this.profilePageOpenJD.Name = "profilePageOpenJD";
-            this.profilePageOpenJD.Size = new System.Drawing.Size(75, 32);
-            this.profilePageOpenJD.TabIndex = 1;
-            this.profilePageOpenJD.Text = "Open";
-            this.profilePageOpenJD.UseVisualStyleBackColor = true;
-            this.profilePageOpenJD.Click += new System.EventHandler(this.profilePageOpenJD_Click);
             // 
             // intervieweeProfilePageJD1
             // 
@@ -167,65 +177,72 @@
             this.intervieweeProfilePageJD1.Controls.Add(this.JDView1032018test1);
             this.intervieweeProfilePageJD1.Controls.Add(this.pictureBox4);
             this.intervieweeProfilePageJD1.Location = new System.Drawing.Point(0, 0);
+            this.intervieweeProfilePageJD1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.intervieweeProfilePageJD1.Name = "intervieweeProfilePageJD1";
-            this.intervieweeProfilePageJD1.Size = new System.Drawing.Size(1146, 745);
+            this.intervieweeProfilePageJD1.Size = new System.Drawing.Size(764, 484);
             this.intervieweeProfilePageJD1.TabIndex = 2;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::panel_based_prototype.Properties.Resources._4_Interviewee_Profile;
-            this.pictureBox4.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(1146, 748);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 0;
-            this.pictureBox4.TabStop = false;
-            // 
-            // JDView1032018test1
-            // 
-            this.JDView1032018test1.Location = new System.Drawing.Point(913, 310);
-            this.JDView1032018test1.Name = "JDView1032018test1";
-            this.JDView1032018test1.Size = new System.Drawing.Size(96, 41);
-            this.JDView1032018test1.TabIndex = 1;
-            this.JDView1032018test1.Text = " View";
-            this.JDView1032018test1.UseVisualStyleBackColor = true;
-            this.JDView1032018test1.Click += new System.EventHandler(this.JDView1032018test1_Click);
-            // 
-            // JD27042018testCompleteButton1
-            // 
-            this.JD27042018testCompleteButton1.Location = new System.Drawing.Point(913, 262);
-            this.JD27042018testCompleteButton1.Name = "JD27042018testCompleteButton1";
-            this.JD27042018testCompleteButton1.Size = new System.Drawing.Size(96, 42);
-            this.JD27042018testCompleteButton1.TabIndex = 2;
-            this.JD27042018testCompleteButton1.Text = "Complete";
-            this.JD27042018testCompleteButton1.UseVisualStyleBackColor = true;
-            this.JD27042018testCompleteButton1.Click += new System.EventHandler(this.JD27042018testCompleteButton1_Click);
             // 
             // JDBackButton
             // 
             this.JDBackButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.JDBackButton.Location = new System.Drawing.Point(3, 79);
+            this.JDBackButton.Location = new System.Drawing.Point(2, 51);
+            this.JDBackButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.JDBackButton.Name = "JDBackButton";
-            this.JDBackButton.Size = new System.Drawing.Size(53, 58);
+            this.JDBackButton.Size = new System.Drawing.Size(35, 38);
             this.JDBackButton.TabIndex = 3;
             this.JDBackButton.Text = "<";
             this.JDBackButton.UseVisualStyleBackColor = true;
             this.JDBackButton.Click += new System.EventHandler(this.JDBackButton_Click);
             // 
+            // JD27042018testCompleteButton1
+            // 
+            this.JD27042018testCompleteButton1.Location = new System.Drawing.Point(609, 170);
+            this.JD27042018testCompleteButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.JD27042018testCompleteButton1.Name = "JD27042018testCompleteButton1";
+            this.JD27042018testCompleteButton1.Size = new System.Drawing.Size(64, 27);
+            this.JD27042018testCompleteButton1.TabIndex = 2;
+            this.JD27042018testCompleteButton1.Text = "Complete";
+            this.JD27042018testCompleteButton1.UseVisualStyleBackColor = true;
+            this.JD27042018testCompleteButton1.Click += new System.EventHandler(this.JD27042018testCompleteButton1_Click);
+            // 
+            // JDView1032018test1
+            // 
+            this.JDView1032018test1.Location = new System.Drawing.Point(609, 201);
+            this.JDView1032018test1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.JDView1032018test1.Name = "JDView1032018test1";
+            this.JDView1032018test1.Size = new System.Drawing.Size(64, 27);
+            this.JDView1032018test1.TabIndex = 1;
+            this.JDView1032018test1.Text = " View";
+            this.JDView1032018test1.UseVisualStyleBackColor = true;
+            this.JDView1032018test1.Click += new System.EventHandler(this.JDView1032018test1_Click);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::panel_based_prototype.Properties.Resources._4_Interviewee_Profile;
+            this.pictureBox4.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(764, 486);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 0;
+            this.pictureBox4.TabStop = false;
+            // 
             // generalTestPanel
             // 
             this.generalTestPanel.Controls.Add(this.pictureBox5);
-            this.generalTestPanel.Location = new System.Drawing.Point(1, 3);
+            this.generalTestPanel.Location = new System.Drawing.Point(1, 2);
+            this.generalTestPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.generalTestPanel.Name = "generalTestPanel";
-            this.generalTestPanel.Size = new System.Drawing.Size(1145, 744);
+            this.generalTestPanel.Size = new System.Drawing.Size(763, 484);
             this.generalTestPanel.TabIndex = 2;
             // 
             // pictureBox5
             // 
             this.pictureBox5.Image = global::panel_based_prototype.Properties.Resources._6_Test;
-            this.pictureBox5.Location = new System.Drawing.Point(0, -3);
+            this.pictureBox5.Location = new System.Drawing.Point(0, -2);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(1145, 747);
+            this.pictureBox5.Size = new System.Drawing.Size(763, 486);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 0;
             this.pictureBox5.TabStop = false;
@@ -235,42 +252,46 @@
             this.JDTestResultsPanel.Controls.Add(this.JDTestReturnToProfileButton);
             this.JDTestResultsPanel.Controls.Add(this.pictureBox6);
             this.JDTestResultsPanel.Location = new System.Drawing.Point(1, 0);
+            this.JDTestResultsPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.JDTestResultsPanel.Name = "JDTestResultsPanel";
-            this.JDTestResultsPanel.Size = new System.Drawing.Size(1145, 742);
+            this.JDTestResultsPanel.Size = new System.Drawing.Size(763, 482);
             this.JDTestResultsPanel.TabIndex = 1;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::panel_based_prototype.Properties.Resources._5_Interview_Results;
-            this.pictureBox6.Location = new System.Drawing.Point(-1, 0);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(1146, 748);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 0;
-            this.pictureBox6.TabStop = false;
             // 
             // JDTestReturnToProfileButton
             // 
             this.JDTestReturnToProfileButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.JDTestReturnToProfileButton.Location = new System.Drawing.Point(-1, 79);
+            this.JDTestReturnToProfileButton.Location = new System.Drawing.Point(-1, 51);
+            this.JDTestReturnToProfileButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.JDTestReturnToProfileButton.Name = "JDTestReturnToProfileButton";
-            this.JDTestReturnToProfileButton.Size = new System.Drawing.Size(56, 58);
+            this.JDTestReturnToProfileButton.Size = new System.Drawing.Size(37, 38);
             this.JDTestReturnToProfileButton.TabIndex = 1;
             this.JDTestReturnToProfileButton.Text = "<";
             this.JDTestReturnToProfileButton.UseVisualStyleBackColor = true;
             this.JDTestReturnToProfileButton.Click += new System.EventHandler(this.JDTestReturnToProfileButton_Click);
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::panel_based_prototype.Properties.Resources._5_Interview_Results;
+            this.pictureBox6.Location = new System.Drawing.Point(-1, 0);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(764, 486);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 0;
+            this.pictureBox6.TabStop = false;
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1148, 744);
+            this.ClientSize = new System.Drawing.Size(765, 484);
             this.Controls.Add(this.JDTestResultsPanel);
             this.Controls.Add(this.generalTestPanel);
             this.Controls.Add(this.allProfilePage1no1);
             this.Controls.Add(this.intervieweeProfilePageJD1);
             this.Controls.Add(this.loadingPanel);
             this.Controls.Add(this.loginPanel2no1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.loadingPanel.ResumeLayout(false);
