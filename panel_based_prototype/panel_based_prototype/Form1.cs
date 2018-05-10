@@ -22,5 +22,15 @@ namespace panel_based_prototype
         {
             loginPanel2no1.BringToFront();
         }
+
+        private void loginPassEnterLabel_Click(object sender, EventArgs e)
+        {
+            loginPassEnterLabel.Text = "*******************";
+        }
+
+        private void loginLoginButton_Click(object sender, EventArgs e)
+        {
+            allProfilePage1no1.BringToFront();
+        }
     }
 }
