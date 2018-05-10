@@ -46,6 +46,33 @@ namespace panel_based_prototype
         private void JD27042018testCompleteButton1_Click(object sender, EventArgs e)
         {
             generalTestPanel.BringToFront();
+            aLittle.Hide();
+            aLot.Hide();
+            Form3 f3 = new Form3();
+            f3.Show();
+            Button button = new Button();
+            button.Text = "Select The Image Above";
+            selectImage.BringToFront();
+            selectImage.Controls.Add(button);
+            button.Click += new EventHandler(selectImage_Click);
+            button.Dock = DockStyle.Fill;
+            MessageBox.Show("Glimglag");
+        }
+
+        private void selectImage_Click(object sender, EventArgs e)
+        {
+            Button aLittleBtn = new Button();
+            Button aLotBtn = new Button();
+            aLotBtn.Text = "A Lot";
+            aLittleBtn.Text = "A Little";
+            aLittle.Show();
+            aLot.Show();
+            aLittleBtn.Visible = true;
+            aLotBtn.Visible = true;
+            aLittleBtn.Dock = DockStyle.Fill;
+            aLotBtn.Dock = DockStyle.Fill;
+            aLot.Controls.Add(aLotBtn);
+            aLittle.Controls.Add(aLittleBtn);
         }
 
         private void JDBackButton_Click(object sender, EventArgs e)
