@@ -44,13 +44,14 @@
             this.JDView1032018test1 = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.generalTestPanel = new System.Windows.Forms.Panel();
+            this.aLot = new System.Windows.Forms.Panel();
+            this.aLittle = new System.Windows.Forms.Panel();
+            this.selectImage = new System.Windows.Forms.Panel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.JDTestResultsPanel = new System.Windows.Forms.Panel();
             this.JDTestReturnToProfileButton = new System.Windows.Forms.Button();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.selectImage = new System.Windows.Forms.Panel();
-            this.aLot = new System.Windows.Forms.Panel();
-            this.aLittle = new System.Windows.Forms.Panel();
+            this.imagePanel1 = new System.Windows.Forms.Panel();
             this.loadingPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.loginPanel2no1.SuspendLayout();
@@ -232,6 +233,7 @@
             // 
             // generalTestPanel
             // 
+            this.generalTestPanel.Controls.Add(this.imagePanel1);
             this.generalTestPanel.Controls.Add(this.aLot);
             this.generalTestPanel.Controls.Add(this.aLittle);
             this.generalTestPanel.Controls.Add(this.selectImage);
@@ -241,6 +243,27 @@
             this.generalTestPanel.Name = "generalTestPanel";
             this.generalTestPanel.Size = new System.Drawing.Size(763, 484);
             this.generalTestPanel.TabIndex = 2;
+            // 
+            // aLot
+            // 
+            this.aLot.Location = new System.Drawing.Point(227, 137);
+            this.aLot.Name = "aLot";
+            this.aLot.Size = new System.Drawing.Size(79, 25);
+            this.aLot.TabIndex = 2;
+            // 
+            // aLittle
+            // 
+            this.aLittle.Location = new System.Drawing.Point(227, 183);
+            this.aLittle.Name = "aLittle";
+            this.aLittle.Size = new System.Drawing.Size(79, 25);
+            this.aLittle.TabIndex = 3;
+            // 
+            // selectImage
+            // 
+            this.selectImage.Location = new System.Drawing.Point(72, 242);
+            this.selectImage.Name = "selectImage";
+            this.selectImage.Size = new System.Drawing.Size(139, 44);
+            this.selectImage.TabIndex = 2;
             // 
             // pictureBox5
             // 
@@ -286,34 +309,20 @@
             this.pictureBox6.TabIndex = 0;
             this.pictureBox6.TabStop = false;
             // 
-            // selectImage
+            // imagePanel1
             // 
-            this.selectImage.Location = new System.Drawing.Point(71, 96);
-            this.selectImage.Name = "selectImage";
-            this.selectImage.Size = new System.Drawing.Size(200, 100);
-            this.selectImage.TabIndex = 2;
-            // 
-            // aLot
-            // 
-            this.aLot.Location = new System.Drawing.Point(309, 74);
-            this.aLot.Name = "aLot";
-            this.aLot.Size = new System.Drawing.Size(79, 25);
-            this.aLot.TabIndex = 2;
-            // 
-            // aLittle
-            // 
-            this.aLittle.Location = new System.Drawing.Point(309, 118);
-            this.aLittle.Name = "aLittle";
-            this.aLittle.Size = new System.Drawing.Size(79, 25);
-            this.aLittle.TabIndex = 3;
+            this.imagePanel1.Location = new System.Drawing.Point(72, 126);
+            this.imagePanel1.Name = "imagePanel1";
+            this.imagePanel1.Size = new System.Drawing.Size(149, 100);
+            this.imagePanel1.TabIndex = 4;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(765, 484);
-            this.Controls.Add(this.JDTestResultsPanel);
             this.Controls.Add(this.generalTestPanel);
+            this.Controls.Add(this.JDTestResultsPanel);
             this.Controls.Add(this.allProfilePage1no1);
             this.Controls.Add(this.intervieweeProfilePageJD1);
             this.Controls.Add(this.loadingPanel);
@@ -363,6 +372,7 @@
         private System.Windows.Forms.Panel selectImage;
         private System.Windows.Forms.Panel aLot;
         private System.Windows.Forms.Panel aLittle;
+        private System.Windows.Forms.Panel imagePanel1;
     }
 }
 
