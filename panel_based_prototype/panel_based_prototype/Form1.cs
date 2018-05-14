@@ -14,6 +14,8 @@ namespace panel_based_prototype
     {
         private bool aLittleButton = false;
         private bool aLotButton = true;
+        private Button aLittleBtn;
+        private Button aLotBtn;
 
         public Form1()
         {
@@ -66,8 +68,8 @@ namespace panel_based_prototype
 
         private void selectImage_Click(object sender, EventArgs e)
         {
-            Button aLittleBtn = new Button();
-            Button aLotBtn = new Button();
+            aLittleBtn = new Button();
+            aLotBtn = new Button();
             aLotBtn.Text = "A Lot";
             aLittleBtn.Text = "A Little";
             aLittle.Show();
@@ -95,6 +97,7 @@ namespace panel_based_prototype
             aLittleButton = true;
             if (aLittleButton) {
                 imagePanel1.BorderStyle = BorderStyle.FixedSingle;
+
             }
         }
 
