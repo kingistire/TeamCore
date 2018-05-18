@@ -44,6 +44,7 @@
             this.JDView1032018test1 = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.generalTestPanel = new System.Windows.Forms.Panel();
+            this.imagePanel1 = new System.Windows.Forms.Panel();
             this.aLot = new System.Windows.Forms.Panel();
             this.aLittle = new System.Windows.Forms.Panel();
             this.selectImage = new System.Windows.Forms.Panel();
@@ -51,7 +52,6 @@
             this.JDTestResultsPanel = new System.Windows.Forms.Panel();
             this.JDTestReturnToProfileButton = new System.Windows.Forms.Button();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.imagePanel1 = new System.Windows.Forms.Panel();
             this.loadingPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.loginPanel2no1.SuspendLayout();
@@ -111,13 +111,15 @@
             // 
             // loginLoginButton
             // 
+            this.loginLoginButton.BackColor = System.Drawing.Color.Transparent;
+            this.loginLoginButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.loginLoginButton.Location = new System.Drawing.Point(431, 263);
             this.loginLoginButton.Margin = new System.Windows.Forms.Padding(2);
             this.loginLoginButton.Name = "loginLoginButton";
             this.loginLoginButton.Size = new System.Drawing.Size(193, 25);
             this.loginLoginButton.TabIndex = 4;
-            this.loginLoginButton.Text = "Log In Boi";
-            this.loginLoginButton.UseVisualStyleBackColor = true;
+            this.loginLoginButton.Text = "Login";
+            this.loginLoginButton.UseVisualStyleBackColor = false;
             this.loginLoginButton.Click += new System.EventHandler(this.loginLoginButton_Click);
             // 
             // loginPassEnterLabel
@@ -244,6 +246,13 @@
             this.generalTestPanel.Size = new System.Drawing.Size(763, 484);
             this.generalTestPanel.TabIndex = 2;
             // 
+            // imagePanel1
+            // 
+            this.imagePanel1.Location = new System.Drawing.Point(72, 126);
+            this.imagePanel1.Name = "imagePanel1";
+            this.imagePanel1.Size = new System.Drawing.Size(149, 100);
+            this.imagePanel1.TabIndex = 4;
+            // 
             // aLot
             // 
             this.aLot.Location = new System.Drawing.Point(227, 137);
@@ -309,24 +318,17 @@
             this.pictureBox6.TabIndex = 0;
             this.pictureBox6.TabStop = false;
             // 
-            // imagePanel1
-            // 
-            this.imagePanel1.Location = new System.Drawing.Point(72, 126);
-            this.imagePanel1.Name = "imagePanel1";
-            this.imagePanel1.Size = new System.Drawing.Size(149, 100);
-            this.imagePanel1.TabIndex = 4;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(765, 484);
             this.Controls.Add(this.generalTestPanel);
+            this.Controls.Add(this.loginPanel2no1);
             this.Controls.Add(this.JDTestResultsPanel);
             this.Controls.Add(this.allProfilePage1no1);
             this.Controls.Add(this.intervieweeProfilePageJD1);
             this.Controls.Add(this.loadingPanel);
-            this.Controls.Add(this.loginPanel2no1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";

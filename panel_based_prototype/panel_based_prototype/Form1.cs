@@ -26,6 +26,7 @@ namespace panel_based_prototype
         private void loadingTOlogin_Click(object sender, EventArgs e)
         {
             loginPanel2no1.BringToFront();
+
         }
 
         private void loginPassEnterLabel_Click(object sender, EventArgs e)
