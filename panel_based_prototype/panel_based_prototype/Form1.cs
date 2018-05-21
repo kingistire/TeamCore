@@ -20,13 +20,7 @@ namespace panel_based_prototype
         public Form1()
         {
             InitializeComponent();
-            loadingPanel.BringToFront();
-        }
-
-        private void loadingTOlogin_Click(object sender, EventArgs e)
-        {
             loginPanel2no1.BringToFront();
-
         }
 
         private void loginPassEnterLabel_Click(object sender, EventArgs e)
@@ -51,11 +45,11 @@ namespace panel_based_prototype
 
         private void JD27042018testCompleteButton1_Click(object sender, EventArgs e)
         {
-            generalTestPanel.BringToFront();
+            soundTestPanel.BringToFront();
             aLittle.Hide();
             aLot.Hide();
             Button button = new Button();
-            button.BackgroundImage = Image.FromFile(@"C:\Users\Jason Tam\Pictures\Holden-VY-SS-Commodore-2002-10-.jpg");
+            //button.BackgroundImage = Image.FromFile(@"C:\Users\Jason Tam\Pictures\Holden-VY-SS-Commodore-2002-10-.jpg");
             button.Dock = DockStyle.Fill;
             imagePanel1.Controls.Add(button);
             button.Click += new EventHandler(imagePanel1_Click);
@@ -101,7 +95,7 @@ namespace panel_based_prototype
             aLittleBtn = new Button();
             aLotBtn = new Button();
             aLotBtn.Text = "A Lot";
-            aLittleBtn.Text = "A Little";
+            aLittleBtn.Text = "A Little"; 
             aLittle.Show();
             aLot.Show();
             aLittleBtn.Visible = true;
@@ -113,6 +107,70 @@ namespace panel_based_prototype
             aLittle.Controls.Add(aLittleBtn);
             aLotBtn.Click += new EventHandler(aLot_Click);
             aLittleBtn.Click += new EventHandler(aLittle_Click);
+        }
+
+        private void test1Btn_Click(object sender, EventArgs e) {
+            sightTestPanel.BringToFront();
+        }
+
+        private void button2_Click(object sender, EventArgs e) {
+            sightPic1.BorderStyle = BorderStyle.Fixed3D;
+            sightPic1.BackColor = Color.Tomato;
+        }
+
+        private void button3_Click(object sender, EventArgs e) {
+            sightPic1.BorderStyle = BorderStyle.None;
+            sightPic1.BackColor = Color.Red;
+        }
+
+        private void button7_Click(object sender, EventArgs e) {
+            sightPic2.BorderStyle = BorderStyle.Fixed3D;
+            sightPic2.BackColor = Color.Tomato;
+        }
+
+        private void button12_Click(object sender, EventArgs e) {
+            sightPic2.BorderStyle = BorderStyle.None;
+            sightPic2.BackColor = Color.Red;
+        }
+
+        private void button6_Click(object sender, EventArgs e) {
+            sightPic3.BorderStyle = BorderStyle.Fixed3D;
+            sightPic3.BackColor = Color.Tomato;
+        }
+
+        private void button11_Click(object sender, EventArgs e) {
+            sightPic3.BorderStyle = BorderStyle.None;
+            sightPic3.BackColor = Color.Red;
+        }
+
+        private void button8_Click(object sender, EventArgs e) {
+            sightPic4.BorderStyle = BorderStyle.Fixed3D;
+            sightPic4.BackColor = Color.Tomato;
+        }
+
+        private void button10_Click(object sender, EventArgs e) {
+            sightPic4.BorderStyle = BorderStyle.None;
+            sightPic4.BackColor = Color.Red;
+        }
+
+        private void button5_Click(object sender, EventArgs e) {
+            sightPic5.BorderStyle = BorderStyle.Fixed3D;
+            sightPic5.BackColor = Color.Tomato;
+        }
+
+        private void button9_Click(object sender, EventArgs e) {
+            sightPic5.BorderStyle = BorderStyle.None;
+            sightPic5.BackColor = Color.Red;
+        }
+
+        private void button4_Click(object sender, EventArgs e) {
+            sightPic6.BorderStyle = BorderStyle.Fixed3D;
+            sightPic6.BackColor = Color.Tomato;
+        }
+
+        private void button13_Click(object sender, EventArgs e) {
+            sightPic6.BorderStyle = BorderStyle.None;
+            sightPic6.BackColor = Color.Red;
         }
     }
 }

@@ -123,6 +123,16 @@ namespace panel_based_prototype.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap busy_patterns {
+            get {
+                object obj = ResourceManager.GetObject("busy patterns", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Create_Profile_popup {
             get {
                 object obj = ResourceManager.GetObject("Create Profile popup", resourceCulture);
@@ -143,9 +153,59 @@ namespace panel_based_prototype.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap drawer {
+            get {
+                object obj = ResourceManager.GetObject("drawer", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap First_Time {
             get {
                 object obj = ResourceManager.GetObject("First Time", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fluro_light {
+            get {
+                object obj = ResourceManager.GetObject("fluro light", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap lightandshadow {
+            get {
+                object obj = ResourceManager.GetObject("lightandshadow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap people_running {
+            get {
+                object obj = ResourceManager.GetObject("people running", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sightIMG1 {
+            get {
+                object obj = ResourceManager.GetObject("sightIMG1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -176,6 +236,16 @@ namespace panel_based_prototype.Properties {
         internal static System.Drawing.Bitmap Test__Touch_1_ {
             get {
                 object obj = ResourceManager.GetObject("Test (Touch 1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap username {
+            get {
+                object obj = ResourceManager.GetObject("username", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
