@@ -55,10 +55,10 @@ namespace panel_based_prototype
             aLittle.Hide();
             aLot.Hide();
             Button button = new Button();
-            button.Text = "Select The Image Above";
-            selectImage.BringToFront();
-            selectImage.Controls.Add(button);
-            button.Click += new EventHandler(selectImage_Click);
+            button.BackgroundImage = Image.FromFile(@"C:\Users\Jason Tam\Pictures\Holden-VY-SS-Commodore-2002-10-.jpg");
+            button.Dock = DockStyle.Fill;
+            imagePanel1.Controls.Add(button);
+            button.Click += new EventHandler(imagePanel1_Click);
             button.Dock = DockStyle.Fill;
             PictureBox carPb = new PictureBox();
             carPb.ImageLocation = "https://res.cloudinary.com/carsguide/image/upload/f_auto,fl_lossy,q_auto,t_cg_hero_large/v1/editorial/dp/albums/album-1327/lg/Holden-VY-SS-Commodore-2002-10-.jpg";
@@ -67,25 +67,10 @@ namespace panel_based_prototype
             carPb.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
-        private void selectImage_Click(object sender, EventArgs e)
-        {
-            aLittleBtn = new Button();
-            aLotBtn = new Button();
-            aLotBtn.Text = "A Lot";
-            aLittleBtn.Text = "A Little";
-            aLittle.Show();
-            aLot.Show();
-            aLittleBtn.Visible = true;
-            aLotBtn.Visible = true;
-            aLittleBtn.Dock = DockStyle.Fill;
-            aLotBtn.Dock = DockStyle.Fill;
-            //Adding controls to buttons
-            aLot.Controls.Add(aLotBtn);
-            aLittle.Controls.Add(aLittleBtn);
-            aLotBtn.Click += new EventHandler(aLot_Click);
-            aLittleBtn.Click += new EventHandler(aLittle_Click);
+        //private void selectImage_Click(object sender, EventArgs e)
+        //{
             
-        }
+        //}
 
         private void aLot_Click(object sender, EventArgs e) {
             aLotButton = true;
@@ -110,6 +95,24 @@ namespace panel_based_prototype
         private void JDTestReturnToProfileButton_Click(object sender, EventArgs e)
         {
             intervieweeProfilePageJD1.BringToFront();
+        }
+
+        private void imagePanel1_Click(object sender, EventArgs e) {
+            aLittleBtn = new Button();
+            aLotBtn = new Button();
+            aLotBtn.Text = "A Lot";
+            aLittleBtn.Text = "A Little";
+            aLittle.Show();
+            aLot.Show();
+            aLittleBtn.Visible = true;
+            aLotBtn.Visible = true;
+            aLittleBtn.Dock = DockStyle.Fill;
+            aLotBtn.Dock = DockStyle.Fill;
+            //Adding controls to buttons
+            aLot.Controls.Add(aLotBtn);
+            aLittle.Controls.Add(aLittleBtn);
+            aLotBtn.Click += new EventHandler(aLot_Click);
+            aLittleBtn.Click += new EventHandler(aLittle_Click);
         }
     }
 }
