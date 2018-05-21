@@ -13,14 +13,18 @@ namespace panel_based_prototype
     public partial class Form1 : Form
     {
         private bool aLittleButton = false;
-        private bool aLotButton = true;
+        private bool aLotButton = false;
+        private bool aLittleButton2 = false;
+        private bool aLotButton2 = false;
+        private bool aLittleButton3 = false;
+        private bool aLotButton3 = false;
         private Button aLittleBtn;
         private Button aLotBtn;
 
         public Form1()
         {
             InitializeComponent();
-            loadingPanel.BringToFront();
+            loginPanel2no1.BringToFront();
         }
 
         private void loadingTOlogin_Click(object sender, EventArgs e)
@@ -54,17 +58,27 @@ namespace panel_based_prototype
             generalTestPanel.BringToFront();
             aLittle.Hide();
             aLot.Hide();
+            //Image Panel 1
             Button button = new Button();
             button.BackgroundImage = Image.FromFile(@"C:\Users\Jason Tam\Pictures\Holden-VY-SS-Commodore-2002-10-.jpg");
-            button.Dock = DockStyle.Fill;
+            button.BackgroundImageLayout = ImageLayout.Stretch;
             imagePanel1.Controls.Add(button);
             button.Click += new EventHandler(imagePanel1_Click);
             button.Dock = DockStyle.Fill;
-            PictureBox carPb = new PictureBox();
-            carPb.ImageLocation = "https://res.cloudinary.com/carsguide/image/upload/f_auto,fl_lossy,q_auto,t_cg_hero_large/v1/editorial/dp/albums/album-1327/lg/Holden-VY-SS-Commodore-2002-10-.jpg";
-            carPb.Dock = DockStyle.Fill;
-            imagePanel1.Controls.Add(carPb);
-            carPb.SizeMode = PictureBoxSizeMode.StretchImage;
+            //Image Panel 2
+            Button button1 = new Button();
+            button1.BackgroundImage = Image.FromFile(@"C:\Users\Jason Tam\Pictures\Holden-VY-SS-Commodore-2002-10-.jpg");
+            button1.BackgroundImageLayout = ImageLayout.Stretch;
+            test1imagePanel2.Controls.Add(button1);
+            button1.Click += new EventHandler(test1imagePanel2_Click);
+            button1.Dock = DockStyle.Fill;
+            //Image Panel 3
+            Button button2 = new Button();
+            button2.BackgroundImage = Image.FromFile(@"C:\Users\Jason Tam\Pictures\Holden-VY-SS-Commodore-2002-10-.jpg");
+            button2.BackgroundImageLayout = ImageLayout.Stretch;
+            test1ImagePanel3.Controls.Add(button2);
+            button2.Click += new EventHandler(test1ImagePanel3_Click);
+            button2.Dock = DockStyle.Fill;
         }
 
         //private void selectImage_Click(object sender, EventArgs e)
@@ -73,17 +87,14 @@ namespace panel_based_prototype
         //}
 
         private void aLot_Click(object sender, EventArgs e) {
-            aLotButton = true;
             if (aLotButton) {
                 imagePanel1.BorderStyle = BorderStyle.Fixed3D;
             }
         }
 
         private void aLittle_Click(object sender, EventArgs e) {
-            aLittleButton = true;
             if (aLittleButton) {
                 imagePanel1.BorderStyle = BorderStyle.FixedSingle;
-
             }
         }
 
@@ -102,17 +113,51 @@ namespace panel_based_prototype
             aLotBtn = new Button();
             aLotBtn.Text = "A Lot";
             aLittleBtn.Text = "A Little";
-            aLittle.Show();
-            aLot.Show();
-            aLittleBtn.Visible = true;
-            aLotBtn.Visible = true;
+            //aLittleBtn.Visible = true;
+            //aLotBtn.Visible = true;
+            //aLittleBtn.Show();
+            //aLotBtn.Show();
             aLittleBtn.Dock = DockStyle.Fill;
             aLotBtn.Dock = DockStyle.Fill;
             //Adding controls to buttons
+            aLot.Visible = true;
+            aLittle.Visible = true;
             aLot.Controls.Add(aLotBtn);
             aLittle.Controls.Add(aLittleBtn);
             aLotBtn.Click += new EventHandler(aLot_Click);
             aLittleBtn.Click += new EventHandler(aLittle_Click);
+            aLittleButton = true;
+            aLotButton = true;
+        }
+
+        private void test1imagePanel2_Click(object sender, EventArgs e) {
+            aLittleBtn = new Button();
+            aLotBtn = new Button();
+            aLotBtn.Text = "A Lot";
+            aLittleBtn.Text = "A Little";
+            test1aLittle2.Visible = true;
+            test1aLot2.Visible = true;
+            test1aLot2.Controls.Add(aLotBtn);
+            test1aLittle2.Controls.Add(aLittleBtn);
+            aLotBtn.Click += new EventHandler(aLot_Click);
+            aLittleBtn.Click += new EventHandler(aLittle_Click);
+            aLittleButton2 = true;
+            aLotButton2 = true;
+        }
+
+        private void test1ImagePanel3_Click(object sender, EventArgs e) {
+            aLittleBtn = new Button();
+            aLotBtn = new Button();
+            aLotBtn.Text = "A Lot";
+            aLittleBtn.Text = "A Little";
+            test1aLittle3.Visible = true;
+            test1aLot3.Visible = true;
+            test1aLot3.Controls.Add(aLotBtn);
+            test1aLittle3.Controls.Add(aLittleBtn);
+            aLotBtn.Click += new EventHandler(aLot_Click);
+            aLittleBtn.Click += new EventHandler(aLittle_Click);
+            aLotButton3 = true;
+            aLittleButton3 = true;
         }
     }
 }
