@@ -112,12 +112,14 @@
     <Content Include="Resources\Create Profile popup.png" />
     <Content Include="Resources\Create Test.png" />
     <None Include="Resources\drawer.PNG" />
+    <None Include="Resources\dummy info.PNG" />
     <Content Include="Resources\First Time.png" />
     <None Include="Resources\fluro light.PNG" />
     <None Include="Resources\people running.PNG" />
     <None Include="Resources\lightandshadow.PNG" />
     <Content Include="Resources\sightIMG1.PNG" />
     <None Include="Resources\sightIMG11.PNG" />
+    <None Include="Resources\sunlight.PNG" />
     <Content Include="Resources\Test %28Sight 1%29.png" />
     <Content Include="Resources\Test %28Sounds 1%29.png" />
     <Content Include="Resources\Test %28Touch 1%29.png" />

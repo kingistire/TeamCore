@@ -163,6 +163,16 @@ namespace panel_based_prototype.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dummy_info {
+            get {
+                object obj = ResourceManager.GetObject("dummy info", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap First_Time {
             get {
                 object obj = ResourceManager.GetObject("First Time", resourceCulture);
@@ -206,6 +216,16 @@ namespace panel_based_prototype.Properties {
         internal static System.Drawing.Bitmap sightIMG1 {
             get {
                 object obj = ResourceManager.GetObject("sightIMG1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sunlight {
+            get {
+                object obj = ResourceManager.GetObject("sunlight", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

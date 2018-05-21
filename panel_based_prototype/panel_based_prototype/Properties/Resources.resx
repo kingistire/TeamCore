@@ -139,23 +139,23 @@
   <data name="Create Test" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Create Test.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fluro light" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fluro light.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="4 Interviewee Profile" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\4 Interviewee Profile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="3 Profile Screen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3 Profile Screen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="First Time" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\First Time.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="username" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\username.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Create Profile popup" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Create Profile popup.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sightIMG1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sightIMG11.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fluro light" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fluro light.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Test (Sounds 1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Test (Sounds 1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,10 +169,16 @@
   <data name="drawer" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\drawer.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="First Time" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\First Time.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="5 Interview Results" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\5 Interview Results.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="username" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\username.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="dummy info" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dummy info.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sunlight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sunlight.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

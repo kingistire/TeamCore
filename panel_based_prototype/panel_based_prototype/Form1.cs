@@ -43,23 +43,7 @@ namespace panel_based_prototype
             JDTestResultsPanel.BringToFront();
         }
 
-        private void JD27042018testCompleteButton1_Click(object sender, EventArgs e)
-        {
-            soundTestPanel.BringToFront();
-            aLittle.Hide();
-            aLot.Hide();
-            Button button = new Button();
-            //button.BackgroundImage = Image.FromFile(@"C:\Users\Jason Tam\Pictures\Holden-VY-SS-Commodore-2002-10-.jpg");
-            button.Dock = DockStyle.Fill;
-            imagePanel1.Controls.Add(button);
-            button.Click += new EventHandler(imagePanel1_Click);
-            button.Dock = DockStyle.Fill;
-            PictureBox carPb = new PictureBox();
-            carPb.ImageLocation = "https://res.cloudinary.com/carsguide/image/upload/f_auto,fl_lossy,q_auto,t_cg_hero_large/v1/editorial/dp/albums/album-1327/lg/Holden-VY-SS-Commodore-2002-10-.jpg";
-            carPb.Dock = DockStyle.Fill;
-            imagePanel1.Controls.Add(carPb);
-            carPb.SizeMode = PictureBoxSizeMode.StretchImage;
-        }
+
 
         //private void selectImage_Click(object sender, EventArgs e)
         //{
@@ -115,7 +99,7 @@ namespace panel_based_prototype
 
         private void button2_Click(object sender, EventArgs e) {
             sightPic1.BorderStyle = BorderStyle.Fixed3D;
-            sightPic1.BackColor = Color.Tomato;
+            sightPic1.BackColor = Color.Silver;
         }
 
         private void button3_Click(object sender, EventArgs e) {
@@ -171,6 +155,36 @@ namespace panel_based_prototype
         private void button13_Click(object sender, EventArgs e) {
             sightPic6.BorderStyle = BorderStyle.None;
             sightPic6.BackColor = Color.Red;
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e) {
+            testCompleteButton1.BringToFront();
+            testViewButton1.BringToFront();
+        }
+
+        private void testCompleteButton1_Click(object sender, EventArgs e) {
+            soundTestPanel.BringToFront();
+            aLittle.Hide();
+            aLot.Hide();
+            Button button = new Button();
+            //button.BackgroundImage = Image.FromFile(@"C:\Users\Jason Tam\Pictures\Holden-VY-SS-Commodore-2002-10-.jpg");
+            button.Dock = DockStyle.Fill;
+            imagePanel1.Controls.Add(button);
+            button.Click += new EventHandler(imagePanel1_Click);
+            button.Dock = DockStyle.Fill;
+            PictureBox carPb = new PictureBox();
+            carPb.ImageLocation = "https://res.cloudinary.com/carsguide/image/upload/f_auto,fl_lossy,q_auto,t_cg_hero_large/v1/editorial/dp/albums/album-1327/lg/Holden-VY-SS-Commodore-2002-10-.jpg";
+            carPb.Dock = DockStyle.Fill;
+            imagePanel1.Controls.Add(carPb);
+            carPb.SizeMode = PictureBoxSizeMode.StretchImage;
+        }
+
+        private void testViewButton1_Click(object sender, EventArgs e) {
+            JDTestResultsPanel.BringToFront();
+        }
+
+        private void backButton_Click(object sender, EventArgs e) {
+            soundTestPanel.BringToFront();
         }
     }
 }
