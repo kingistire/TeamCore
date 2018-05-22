@@ -123,6 +123,26 @@ namespace panel_based_prototype.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap balloonPopping {
+            get {
+                object obj = ResourceManager.GetObject("balloonPopping", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bathroomAppliances {
+            get {
+                object obj = ResourceManager.GetObject("bathroomAppliances", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap busy_patterns {
             get {
                 object obj = ResourceManager.GetObject("busy patterns", resourceCulture);
@@ -173,6 +193,16 @@ namespace panel_based_prototype.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fireworks {
+            get {
+                object obj = ResourceManager.GetObject("fireworks", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap First_Time {
             get {
                 object obj = ResourceManager.GetObject("First Time", resourceCulture);
@@ -203,9 +233,29 @@ namespace panel_based_prototype.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap loudVoices {
+            get {
+                object obj = ResourceManager.GetObject("loudVoices", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap people_running {
             get {
                 object obj = ResourceManager.GetObject("people running", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap peopleTalking {
+            get {
+                object obj = ResourceManager.GetObject("peopleTalking", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -256,6 +306,16 @@ namespace panel_based_prototype.Properties {
         internal static System.Drawing.Bitmap username {
             get {
                 object obj = ResourceManager.GetObject("username", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vehicles {
+            get {
+                object obj = ResourceManager.GetObject("vehicles", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

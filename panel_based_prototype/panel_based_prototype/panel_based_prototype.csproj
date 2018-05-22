@@ -99,27 +99,27 @@
     <Content Include="Resources\4 Interviewee Profile.png" />
     <Content Include="Resources\5 Interview Results.png" />
     <Content Include="Resources\6 Test.png" />
-    <Content Include="Resources\alarms.png" />
-    <Content Include="Resources\bathroomAppliances.png" />
+    <None Include="Resources\balloonPopping.png" />
+    <None Include="Resources\bathroomAppliances.png" />
     <Content Include="Resources\busy patterns.PNG" />
     <Content Include="Resources\Create Profile popup.png" />
     <Content Include="Resources\Create Test.png" />
     <Content Include="Resources\drawer.PNG" />
     <Content Include="Resources\dummy info.PNG" />
+    <None Include="Resources\fireworks.png" />
     <Content Include="Resources\First Time.png" />
     <Content Include="Resources\fluro light.PNG" />
     <Content Include="Resources\lightandshadow.PNG" />
-    <Content Include="Resources\loudVoices.png" />
+    <None Include="Resources\loudVoices.png" />
     <Content Include="Resources\people running.PNG" />
-    <Content Include="Resources\peopleTalking.png" />
-    <Content Include="Resources\poppingBalloons.png" />
+    <None Include="Resources\vehicles.png" />
+    <None Include="Resources\peopleTalking.png" />
     <Content Include="Resources\sightIMG1.PNG" />
     <Content Include="Resources\sunlight.PNG" />
     <Content Include="Resources\Test %28Sight 1%29.png" />
     <Content Include="Resources\Test %28Sounds 1%29.png" />
     <Content Include="Resources\Test %28Touch 1%29.png" />
     <Content Include="Resources\username.PNG" />
-    <Content Include="Resources\vehicles.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

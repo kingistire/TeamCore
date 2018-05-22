@@ -167,16 +167,12 @@ namespace panel_based_prototype
             aLittle.Hide();
             aLot.Hide();
             Button button = new Button();
-            //button.BackgroundImage = Image.FromFile(@"C:\Users\Jason Tam\Pictures\Holden-VY-SS-Commodore-2002-10-.jpg");
+            var bmp = new Bitmap(panel_based_prototype.Properties.Resources.balloonPopping);
+            button.BackgroundImage = bmp;
             button.Dock = DockStyle.Fill;
             imagePanel1.Controls.Add(button);
             button.Click += new EventHandler(imagePanel1_Click);
             button.Dock = DockStyle.Fill;
-            PictureBox carPb = new PictureBox();
-            carPb.ImageLocation = "https://res.cloudinary.com/carsguide/image/upload/f_auto,fl_lossy,q_auto,t_cg_hero_large/v1/editorial/dp/albums/album-1327/lg/Holden-VY-SS-Commodore-2002-10-.jpg";
-            carPb.Dock = DockStyle.Fill;
-            imagePanel1.Controls.Add(carPb);
-            carPb.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
         private void testViewButton1_Click(object sender, EventArgs e) {
