@@ -34,6 +34,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -67,18 +68,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -89,40 +90,30 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\1 Loading Screen.png" />
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\2 Login.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\3 Profile Screen.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\4 Interviewee Profile.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\5 Interview Results.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\6 Test.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\username.PNG" />
-    <None Include="Resources\busy patterns.PNG" />
+    <Content Include="Resources\1 Loading Screen.png" />
+    <Content Include="Resources\2 Login.png" />
+    <Content Include="Resources\3 Profile Screen.png" />
+    <Content Include="Resources\4 Interviewee Profile.png" />
+    <Content Include="Resources\5 Interview Results.png" />
+    <Content Include="Resources\6 Test.png" />
+    <Content Include="Resources\busy patterns.PNG" />
     <Content Include="Resources\Create Profile popup.png" />
     <Content Include="Resources\Create Test.png" />
-    <None Include="Resources\drawer.PNG" />
-    <None Include="Resources\dummy info.PNG" />
+    <Content Include="Resources\drawer.PNG" />
+    <Content Include="Resources\dummy info.PNG" />
     <Content Include="Resources\First Time.png" />
-    <None Include="Resources\fluro light.PNG" />
-    <None Include="Resources\people running.PNG" />
-    <None Include="Resources\lightandshadow.PNG" />
+    <Content Include="Resources\fluro light.PNG" />
+    <Content Include="Resources\lightandshadow.PNG" />
+    <Content Include="Resources\people running.PNG" />
     <Content Include="Resources\sightIMG1.PNG" />
-    <None Include="Resources\sightIMG11.PNG" />
-    <None Include="Resources\sunlight.PNG" />
+    <Content Include="Resources\sunlight.PNG" />
     <Content Include="Resources\Test %28Sight 1%29.png" />
     <Content Include="Resources\Test %28Sounds 1%29.png" />
     <Content Include="Resources\Test %28Touch 1%29.png" />
+    <Content Include="Resources\username.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
