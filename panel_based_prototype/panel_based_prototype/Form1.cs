@@ -168,6 +168,7 @@ namespace panel_based_prototype
         }
 
         private void testCompleteButton1_Click(object sender, EventArgs e) {
+            //Top Right
             soundTestPanel.BringToFront();
             aLittle.Hide();
             aLot.Hide();
@@ -178,7 +179,7 @@ namespace panel_based_prototype
             imagePanel1.Controls.Add(button);
             button.Click += new EventHandler(imagePanel1_Click);
             button.Dock = DockStyle.Fill;
-
+            //Middle Top
             Button button1 = new Button();
             var bmp1 = new Bitmap(panel_based_prototype.Properties.Resources.peopleTalking);
             button1.Show();
@@ -186,7 +187,7 @@ namespace panel_based_prototype
             button1.Dock = DockStyle.Fill;
             test1imagePanel2.Controls.Add(button1);
             button1.Click += new EventHandler(test1imagePanel2_Click);
-
+            //Top Left
             Button button2 = new Button();
             var bmp2 = new Bitmap(panel_based_prototype.Properties.Resources.vehicles);
             button2.Show();
