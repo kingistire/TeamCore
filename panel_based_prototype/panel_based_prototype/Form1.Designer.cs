@@ -109,6 +109,7 @@
             this.sightPic5 = new System.Windows.Forms.PictureBox();
             this.sightPic3 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.loginPanel2no1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -133,6 +134,7 @@
             // 
             // loginPanel2no1
             // 
+            this.loginPanel2no1.Controls.Add(this.checkBox1);
             this.loginPanel2no1.Controls.Add(this.label3);
             this.loginPanel2no1.Controls.Add(this.label2);
             this.loginPanel2no1.Controls.Add(this.label1);
@@ -1053,15 +1055,25 @@
             this.pictureBox7.TabIndex = 0;
             this.pictureBox7.TabStop = false;
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(548, 406);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(139, 17);
+            this.checkBox1.TabIndex = 9;
+            this.checkBox1.Text = "Enable Text-To-Speech";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(983, 607);
+            this.Controls.Add(this.loginPanel2no1);
             this.Controls.Add(this.soundTestPanel);
             this.Controls.Add(this.sightTestPanel);
             this.Controls.Add(this.intervieweeProfilePageJD1);
-            this.Controls.Add(this.loginPanel2no1);
             this.Controls.Add(this.allProfilePage1no1);
             this.Controls.Add(this.JDTestResultsPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -1176,6 +1188,7 @@
         private System.Windows.Forms.Button button19;
         private System.Windows.Forms.Button button17;
         private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 

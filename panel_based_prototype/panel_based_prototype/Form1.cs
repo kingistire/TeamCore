@@ -19,6 +19,7 @@ namespace panel_based_prototype
         private Button aLittleBtn;
         private Button aLotBtn;
         private Label[] test1label = new Label[7];
+        private bool enableTTS = false;
 
         public Form1()
         {
@@ -34,6 +35,10 @@ namespace panel_based_prototype
         private void loginLoginButton_Click(object sender, EventArgs e)
         {
             allProfilePage1no1.BringToFront();
+            if (checkBox1.Checked)
+            {
+                enableTTS = true;
+            }
         }
 
         private void profilePageOpenJD_Click(object sender, EventArgs e)
@@ -364,11 +369,15 @@ namespace panel_based_prototype
 
         private void TTS(string readOutLoud)
         {
-            SpeechSynthesizer TTS = new SpeechSynthesizer();
-            TTS.Volume = 80;
-            TTS.Rate = -2;
+            if (enableTTS)
+            {
+                SpeechSynthesizer TTS = new SpeechSynthesizer();
+                TTS.Volume = 80;
+                TTS.Rate = -2;
 
-            TTS.Speak(readOutLoud);
+                TTS.Speak(readOutLoud);
+            }
+
         }
     }
 }
