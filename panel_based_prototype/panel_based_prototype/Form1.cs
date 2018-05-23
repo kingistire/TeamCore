@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Speech.Synthesis;
 
 namespace panel_based_prototype
 {
@@ -100,6 +101,7 @@ namespace panel_based_prototype
             aLittle.Controls.Add(aLittleBtn);
             aLotBtn.Click += new EventHandler(aLot_Click);
             aLittleBtn.Click += new EventHandler(aLittle_Click);
+            TTS("Balloons Popping");
         }
 
         private void test1Btn_Click(object sender, EventArgs e) {
@@ -243,13 +245,14 @@ namespace panel_based_prototype
         {
             button16.Visible = true;
             button17.Visible = true;
-
+            TTS("People Talking");
         }
 
         private void button16_Click(object sender, EventArgs e)
         {
             test1imagePanel2.BorderStyle = BorderStyle.Fixed3D;
             test1imagePanel2.BackColor = Color.Tomato;
+
         }
 
         private void button17_Click(object sender, EventArgs e)
@@ -262,6 +265,7 @@ namespace panel_based_prototype
         {
             button18.Visible = true;
             button19.Visible = true;
+            TTS("Vehicles");
         }
 
         private void button19_Click(object sender, EventArgs e)
@@ -281,18 +285,21 @@ namespace panel_based_prototype
         {
             button20.Visible = true;
             button21.Visible = true;
+            TTS("Bathroom Appliances");
         }
 
         private void test1imagePanel5_Click(object sender, EventArgs e)
         {
             button22.Visible = true;
             button23.Visible = true;
+            TTS("Fireworks");
         }
 
         private void test1imagePanel6_Click(object sender, EventArgs e)
         {
             button24.Visible = true;
             button25.Visible = true;
+            TTS("Loud Voices");
         }
         //Change Background colour bottom row
         //Bottom Left
@@ -353,8 +360,15 @@ namespace panel_based_prototype
             test1SelectImage4.Controls.Add(test1label[3]);
             test1SelectImage5.Controls.Add(test1label[4]);
             test1SelectImage6.Controls.Add(test1label[5]);
+        }
 
+        private void TTS(string readOutLoud)
+        {
+            SpeechSynthesizer TTS = new SpeechSynthesizer();
+            TTS.Volume = 80;
+            TTS.Rate = -2;
 
+            TTS.Speak(readOutLoud);
         }
     }
 }
