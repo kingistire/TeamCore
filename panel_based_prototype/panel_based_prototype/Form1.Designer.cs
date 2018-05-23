@@ -447,6 +447,7 @@
             this.button24.Text = "A Little";
             this.button24.UseVisualStyleBackColor = true;
             this.button24.Visible = false;
+            this.button24.Click += new System.EventHandler(this.button24_Click);
             // 
             // button25
             // 
@@ -457,6 +458,7 @@
             this.button25.Text = "A Lot";
             this.button25.UseVisualStyleBackColor = true;
             this.button25.Visible = false;
+            this.button25.Click += new System.EventHandler(this.button25_Click);
             // 
             // button22
             // 
@@ -467,6 +469,7 @@
             this.button22.Text = "A Little";
             this.button22.UseVisualStyleBackColor = true;
             this.button22.Visible = false;
+            this.button22.Click += new System.EventHandler(this.button22_Click);
             // 
             // button23
             // 
@@ -477,6 +480,7 @@
             this.button23.Text = "A Lot";
             this.button23.UseVisualStyleBackColor = true;
             this.button23.Visible = false;
+            this.button23.Click += new System.EventHandler(this.button23_Click);
             // 
             // button20
             // 
@@ -560,7 +564,6 @@
             this.test1SelectImage6.Name = "test1SelectImage6";
             this.test1SelectImage6.Size = new System.Drawing.Size(114, 34);
             this.test1SelectImage6.TabIndex = 22;
-            this.test1SelectImage6.Visible = false;
             // 
             // test1SelectImage3
             // 
@@ -568,7 +571,6 @@
             this.test1SelectImage3.Name = "test1SelectImage3";
             this.test1SelectImage3.Size = new System.Drawing.Size(114, 34);
             this.test1SelectImage3.TabIndex = 10;
-            this.test1SelectImage3.Visible = false;
             // 
             // test1imagePanel4
             // 
@@ -594,7 +596,6 @@
             this.test1SelectImage5.Name = "test1SelectImage5";
             this.test1SelectImage5.Size = new System.Drawing.Size(114, 34);
             this.test1SelectImage5.TabIndex = 18;
-            this.test1SelectImage5.Visible = false;
             // 
             // imagePanel1
             // 
@@ -610,7 +611,6 @@
             this.test1selectImage2.Name = "test1selectImage2";
             this.test1selectImage2.Size = new System.Drawing.Size(114, 34);
             this.test1selectImage2.TabIndex = 6;
-            this.test1selectImage2.Visible = false;
             // 
             // test1SelectImage4
             // 
@@ -618,7 +618,6 @@
             this.test1SelectImage4.Name = "test1SelectImage4";
             this.test1SelectImage4.Size = new System.Drawing.Size(117, 34);
             this.test1SelectImage4.TabIndex = 14;
-            this.test1SelectImage4.Visible = false;
             // 
             // aLot
             // 
@@ -640,7 +639,6 @@
             this.selectImage.Name = "selectImage";
             this.selectImage.Size = new System.Drawing.Size(117, 34);
             this.selectImage.TabIndex = 2;
-            this.selectImage.Visible = false;
             // 
             // pictureBox5
             // 

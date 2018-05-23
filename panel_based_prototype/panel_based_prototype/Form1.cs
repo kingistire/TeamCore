@@ -17,6 +17,7 @@ namespace panel_based_prototype
          * */
         private Button aLittleBtn;
         private Button aLotBtn;
+        private Label[] test1label = new Label[7];
 
         public Form1()
         {
@@ -171,6 +172,7 @@ namespace panel_based_prototype
         }
 
         private void testCompleteButton1_Click(object sender, EventArgs e) {
+            labels("Popping Balloons", "People Talking", "Vehicles", "Bathroom Appliances", "Fireworks", "Loud Voices");
             //Top Left
             soundTestPanel.BringToFront();
             aLittle.Hide();
@@ -317,6 +319,7 @@ namespace panel_based_prototype
             test1imagePanel5.BorderStyle = BorderStyle.FixedSingle;
             test1imagePanel5.BackColor = Color.Red;
         }
+
         //Bottom Right
         private void button25_Click(object sender, EventArgs e)
         {
@@ -328,6 +331,30 @@ namespace panel_based_prototype
         {
             test1imagePanel6.BorderStyle = BorderStyle.FixedSingle;
             test1imagePanel6.BackColor = Color.Red;
+        }
+
+        private void labels(string topLeft, string topMid, string topRight, string botLeft, string botMid, string botRight)
+        {
+            for(int i = 0; i < 7; i++)
+            {
+                test1label[i] = new Label();
+                test1label[i].Dock = DockStyle.Fill;
+                test1label[i].TextAlign = ContentAlignment.MiddleCenter;
+            }
+            test1label[0].Text = topLeft;
+            test1label[1].Text = topMid;
+            test1label[2].Text = topRight;
+            test1label[3].Text = botLeft;
+            test1label[4].Text = botMid;
+            test1label[5].Text = botRight;
+            selectImage.Controls.Add(test1label[0]);
+            test1selectImage2.Controls.Add(test1label[1]);
+            test1SelectImage3.Controls.Add(test1label[2]);
+            test1SelectImage4.Controls.Add(test1label[3]);
+            test1SelectImage5.Controls.Add(test1label[4]);
+            test1SelectImage6.Controls.Add(test1label[5]);
+
+
         }
     }
 }
