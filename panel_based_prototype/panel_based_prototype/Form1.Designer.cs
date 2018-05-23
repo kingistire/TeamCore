@@ -487,6 +487,7 @@
             this.button20.Text = "A Little";
             this.button20.UseVisualStyleBackColor = true;
             this.button20.Visible = false;
+            this.button20.Click += new System.EventHandler(this.button20_Click);
             // 
             // button21
             // 
@@ -497,6 +498,7 @@
             this.button21.Text = "A Lot";
             this.button21.UseVisualStyleBackColor = true;
             this.button21.Visible = false;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
             // button18
             // 
@@ -526,6 +528,7 @@
             this.test1imagePanel6.Name = "test1imagePanel6";
             this.test1imagePanel6.Size = new System.Drawing.Size(114, 100);
             this.test1imagePanel6.TabIndex = 24;
+            this.test1imagePanel6.Click += new System.EventHandler(this.test1imagePanel6_Click);
             // 
             // test1ImagePanel3
             // 
@@ -541,6 +544,7 @@
             this.test1imagePanel5.Name = "test1imagePanel5";
             this.test1imagePanel5.Size = new System.Drawing.Size(114, 100);
             this.test1imagePanel5.TabIndex = 20;
+            this.test1imagePanel5.Click += new System.EventHandler(this.test1imagePanel5_Click);
             // 
             // test1imagePanel2
             // 
@@ -572,6 +576,7 @@
             this.test1imagePanel4.Name = "test1imagePanel4";
             this.test1imagePanel4.Size = new System.Drawing.Size(117, 100);
             this.test1imagePanel4.TabIndex = 16;
+            this.test1imagePanel4.Click += new System.EventHandler(this.test1imagePanel4_Click);
             // 
             // test1Btn
             // 

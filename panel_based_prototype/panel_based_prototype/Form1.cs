@@ -12,6 +12,9 @@ namespace panel_based_prototype
 {
     public partial class Form1 : Form
     {
+        /**
+         * IGNORE NAMING AND AMOUNT OF NAMES AND FUNCTIONS. WILL BE CLEANED UP IN ACTUAL PRODUCT.
+         * */
         private Button aLittleBtn;
         private Button aLotBtn;
 
@@ -168,7 +171,7 @@ namespace panel_based_prototype
         }
 
         private void testCompleteButton1_Click(object sender, EventArgs e) {
-            //Top Right
+            //Top Left
             soundTestPanel.BringToFront();
             aLittle.Hide();
             aLot.Hide();
@@ -179,6 +182,7 @@ namespace panel_based_prototype
             imagePanel1.Controls.Add(button);
             button.Click += new EventHandler(imagePanel1_Click);
             button.Dock = DockStyle.Fill;
+
             //Middle Top
             Button button1 = new Button();
             var bmp1 = new Bitmap(panel_based_prototype.Properties.Resources.peopleTalking);
@@ -187,7 +191,8 @@ namespace panel_based_prototype
             button1.Dock = DockStyle.Fill;
             test1imagePanel2.Controls.Add(button1);
             button1.Click += new EventHandler(test1imagePanel2_Click);
-            //Top Left
+
+            //Top Right
             Button button2 = new Button();
             var bmp2 = new Bitmap(panel_based_prototype.Properties.Resources.vehicles);
             button2.Show();
@@ -195,6 +200,33 @@ namespace panel_based_prototype
             button2.Dock = DockStyle.Fill;
             test1ImagePanel3.Controls.Add(button2);
             button2.Click += new EventHandler(test1ImagePanel3_Click);
+
+            //Bottom Left
+            Button button3 = new Button();
+            var bmp3 = new Bitmap(panel_based_prototype.Properties.Resources.bathroomAppliances);
+            button3.Show();
+            button3.BackgroundImage = bmp3;
+            button3.Dock = DockStyle.Fill;
+            test1imagePanel4.Controls.Add(button3);
+            button3.Click += new EventHandler(test1imagePanel4_Click);
+
+            //Bottom Middle
+            Button button4 = new Button();
+            var bmp4 = new Bitmap(panel_based_prototype.Properties.Resources.fireworks);
+            button4.Show();
+            button4.BackgroundImage = bmp4;
+            button4.Dock = DockStyle.Fill;
+            test1imagePanel5.Controls.Add(button4);
+            button4.Click += new EventHandler(test1imagePanel5_Click);
+
+            //Bottom Right
+            Button button5 = new Button();
+            var bmp5 = new Bitmap(panel_based_prototype.Properties.Resources.loudVoices);
+            button5.Show();
+            button5.BackgroundImage = bmp5;
+            button5.Dock = DockStyle.Fill;
+            test1imagePanel6.Controls.Add(button5);
+            button5.Click += new EventHandler(test1imagePanel6_Click);
         }
 
         private void testViewButton1_Click(object sender, EventArgs e) {
@@ -240,6 +272,62 @@ namespace panel_based_prototype
         {
             test1ImagePanel3.BorderStyle = BorderStyle.FixedSingle;
             test1ImagePanel3.BackColor = Color.Red;
+        }
+
+        //Make Bottom row buttons visible when image panel clicked
+        private void test1imagePanel4_Click(object sender, EventArgs e)
+        {
+            button20.Visible = true;
+            button21.Visible = true;
+        }
+
+        private void test1imagePanel5_Click(object sender, EventArgs e)
+        {
+            button22.Visible = true;
+            button23.Visible = true;
+        }
+
+        private void test1imagePanel6_Click(object sender, EventArgs e)
+        {
+            button24.Visible = true;
+            button25.Visible = true;
+        }
+        //Change Background colour bottom row
+        //Bottom Left
+        private void button21_Click(object sender, EventArgs e)
+        {
+            test1imagePanel4.BorderStyle = BorderStyle.Fixed3D;
+            test1imagePanel4.BackColor = Color.Tomato;
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            test1imagePanel4.BorderStyle = BorderStyle.FixedSingle;
+            test1imagePanel4.BackColor = Color.Red;
+        }
+        //Bottom Mid
+        private void button23_Click(object sender, EventArgs e)
+        {
+            test1imagePanel5.BorderStyle = BorderStyle.Fixed3D;
+            test1imagePanel5.BackColor = Color.Tomato;
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            test1imagePanel5.BorderStyle = BorderStyle.FixedSingle;
+            test1imagePanel5.BackColor = Color.Red;
+        }
+        //Bottom Right
+        private void button25_Click(object sender, EventArgs e)
+        {
+            test1imagePanel6.BorderStyle = BorderStyle.Fixed3D;
+            test1imagePanel6.BackColor = Color.Tomato;
+        }
+
+        private void button24_Click(object sender, EventArgs e)
+        {
+            test1imagePanel6.BorderStyle = BorderStyle.FixedSingle;
+            test1imagePanel6.BackColor = Color.Red;
         }
     }
 }
