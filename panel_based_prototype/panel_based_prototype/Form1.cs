@@ -12,8 +12,6 @@ namespace panel_based_prototype
 {
     public partial class Form1 : Form
     {
-        private bool aLittleButton = false;
-        private bool aLotButton = true;
         private Button aLittleBtn;
         private Button aLotBtn;
 
@@ -51,18 +49,25 @@ namespace panel_based_prototype
         //}
 
         private void aLot_Click(object sender, EventArgs e) {
-            aLotButton = true;
-            if (aLotButton) {
-                imagePanel1.BorderStyle = BorderStyle.Fixed3D;
-            }
+            imagePanel1.BorderStyle = BorderStyle.Fixed3D;
+            imagePanel1.BackColor = Color.Tomato;
         }
 
         private void aLittle_Click(object sender, EventArgs e) {
-            aLittleButton = true;
-            if (aLittleButton) {
-                imagePanel1.BorderStyle = BorderStyle.FixedSingle;
+            imagePanel1.BorderStyle = BorderStyle.FixedSingle;
+            imagePanel1.BackColor = Color.Red;
+        }
 
-            }
+        private void aLot2_Click(object sender, EventArgs e)
+        {
+            test1imagePanel2.BorderStyle = BorderStyle.Fixed3D;
+            test1imagePanel2.BackColor = Color.Tomato;
+        }
+
+        private void aLittle2_Click(object sender, EventArgs e)
+        {
+            test1imagePanel2.BorderStyle = BorderStyle.FixedSingle;
+            test1imagePanel2.BackColor = Color.Red;
         }
 
         private void JDBackButton_Click(object sender, EventArgs e)
@@ -173,6 +178,22 @@ namespace panel_based_prototype
             imagePanel1.Controls.Add(button);
             button.Click += new EventHandler(imagePanel1_Click);
             button.Dock = DockStyle.Fill;
+
+            Button button1 = new Button();
+            var bmp1 = new Bitmap(panel_based_prototype.Properties.Resources.peopleTalking);
+            button1.Show();
+            button1.BackgroundImage = bmp1;
+            button1.Dock = DockStyle.Fill;
+            test1imagePanel2.Controls.Add(button1);
+            button1.Click += new EventHandler(test1imagePanel2_Click);
+
+            Button button2 = new Button();
+            var bmp2 = new Bitmap(panel_based_prototype.Properties.Resources.vehicles);
+            button2.Show();
+            button2.BackgroundImage = bmp2;
+            button2.Dock = DockStyle.Fill;
+            test1ImagePanel3.Controls.Add(button2);
+            button2.Click += new EventHandler(test1ImagePanel3_Click);
         }
 
         private void testViewButton1_Click(object sender, EventArgs e) {
@@ -181,6 +202,43 @@ namespace panel_based_prototype
 
         private void backButton_Click(object sender, EventArgs e) {
             soundTestPanel.BringToFront();
+        }
+
+        private void test1imagePanel2_Click(object sender, EventArgs e)
+        {
+            button16.Visible = true;
+            button17.Visible = true;
+
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            test1imagePanel2.BorderStyle = BorderStyle.Fixed3D;
+            test1imagePanel2.BackColor = Color.Tomato;
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            test1imagePanel2.BorderStyle = BorderStyle.FixedSingle;
+            test1imagePanel2.BackColor = Color.Red;
+        }
+
+        private void test1ImagePanel3_Click(object sender, EventArgs e)
+        {
+            button18.Visible = true;
+            button19.Visible = true;
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            test1ImagePanel3.BorderStyle = BorderStyle.Fixed3D;
+            test1ImagePanel3.BackColor = Color.Tomato;
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            test1ImagePanel3.BorderStyle = BorderStyle.FixedSingle;
+            test1ImagePanel3.BackColor = Color.Red;
         }
     }
 }
