@@ -379,5 +379,10 @@ namespace panel_based_prototype
             }
 
         }
+
+        private void button26_Click(object sender, EventArgs e) {
+            AddComments addComments = new AddComments();
+            addComments.Show();
+        }
     }
 }

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.loginPanel2no1 = new System.Windows.Forms.Panel();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -109,7 +110,7 @@
             this.sightPic5 = new System.Windows.Forms.PictureBox();
             this.sightPic3 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.button26 = new System.Windows.Forms.Button();
             this.loginPanel2no1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -147,6 +148,16 @@
             this.loginPanel2no1.Name = "loginPanel2no1";
             this.loginPanel2no1.Size = new System.Drawing.Size(972, 627);
             this.loginPanel2no1.TabIndex = 1;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(548, 406);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(139, 17);
+            this.checkBox1.TabIndex = 9;
+            this.checkBox1.Text = "Enable Text-To-Speech";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
@@ -386,6 +397,7 @@
             // 
             // soundTestPanel
             // 
+            this.soundTestPanel.Controls.Add(this.button26);
             this.soundTestPanel.Controls.Add(this.button16);
             this.soundTestPanel.Controls.Add(this.button17);
             this.soundTestPanel.Controls.Add(this.button24);
@@ -1055,23 +1067,23 @@
             this.pictureBox7.TabIndex = 0;
             this.pictureBox7.TabStop = false;
             // 
-            // checkBox1
+            // button26
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(548, 406);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(139, 17);
-            this.checkBox1.TabIndex = 9;
-            this.checkBox1.Text = "Enable Text-To-Speech";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.button26.Location = new System.Drawing.Point(857, 534);
+            this.button26.Name = "button26";
+            this.button26.Size = new System.Drawing.Size(111, 38);
+            this.button26.TabIndex = 35;
+            this.button26.Text = "Add comments";
+            this.button26.UseVisualStyleBackColor = true;
+            this.button26.Click += new System.EventHandler(this.button26_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(983, 607);
-            this.Controls.Add(this.loginPanel2no1);
             this.Controls.Add(this.soundTestPanel);
+            this.Controls.Add(this.loginPanel2no1);
             this.Controls.Add(this.sightTestPanel);
             this.Controls.Add(this.intervieweeProfilePageJD1);
             this.Controls.Add(this.allProfilePage1no1);
@@ -1189,6 +1201,7 @@
         private System.Windows.Forms.Button button17;
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Button button26;
     }
 }
 
