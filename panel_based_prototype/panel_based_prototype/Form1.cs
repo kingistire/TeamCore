@@ -380,7 +380,11 @@ namespace panel_based_prototype
 
         }
 
-        private void button26_Click(object sender, EventArgs e) {
+        private void test1BackButton_Click(object sender, EventArgs e) {
+            intervieweeProfilePageJD1.BringToFront();
+        }
+
+        private void button1_Click(object sender, EventArgs e) {
             AddComments addComments = new AddComments();
             addComments.Show();
         }

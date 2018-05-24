@@ -13,8 +13,14 @@ namespace panel_based_prototype {
     public partial class AddComments : Form {
         public AddComments() {
             InitializeComponent();
-            
+            if(MessageBox.Show("You have completed the interview!", "Completed the interview!", MessageBoxButtons.OK) == DialogResult.OK) {
+                button1.Visible = true;
+                textBox1.Visible = true;
+            }
         }
+
+
+
 
         private void button1_Click(object sender, EventArgs e) {
             this.Close();

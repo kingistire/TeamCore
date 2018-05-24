@@ -51,6 +51,7 @@
             this.JDBackButton = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.soundTestPanel = new System.Windows.Forms.Panel();
+            this.test1BackButton = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
             this.button24 = new System.Windows.Forms.Button();
@@ -110,7 +111,6 @@
             this.sightPic5 = new System.Windows.Forms.PictureBox();
             this.sightPic3 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.button26 = new System.Windows.Forms.Button();
             this.loginPanel2no1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -397,7 +397,7 @@
             // 
             // soundTestPanel
             // 
-            this.soundTestPanel.Controls.Add(this.button26);
+            this.soundTestPanel.Controls.Add(this.test1BackButton);
             this.soundTestPanel.Controls.Add(this.button16);
             this.soundTestPanel.Controls.Add(this.button17);
             this.soundTestPanel.Controls.Add(this.button24);
@@ -429,6 +429,16 @@
             this.soundTestPanel.Name = "soundTestPanel";
             this.soundTestPanel.Size = new System.Drawing.Size(971, 625);
             this.soundTestPanel.TabIndex = 2;
+            // 
+            // test1BackButton
+            // 
+            this.test1BackButton.Location = new System.Drawing.Point(12, 293);
+            this.test1BackButton.Name = "test1BackButton";
+            this.test1BackButton.Size = new System.Drawing.Size(75, 23);
+            this.test1BackButton.TabIndex = 36;
+            this.test1BackButton.Text = "Back";
+            this.test1BackButton.UseVisualStyleBackColor = true;
+            this.test1BackButton.Click += new System.EventHandler(this.test1BackButton_Click);
             // 
             // button16
             // 
@@ -829,8 +839,9 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 27;
-            this.button1.Text = "Next";
+            this.button1.Text = "Finish";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label7
             // 
@@ -1067,24 +1078,14 @@
             this.pictureBox7.TabIndex = 0;
             this.pictureBox7.TabStop = false;
             // 
-            // button26
-            // 
-            this.button26.Location = new System.Drawing.Point(857, 534);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(111, 38);
-            this.button26.TabIndex = 35;
-            this.button26.Text = "Add comments";
-            this.button26.UseVisualStyleBackColor = true;
-            this.button26.Click += new System.EventHandler(this.button26_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(983, 607);
             this.Controls.Add(this.soundTestPanel);
-            this.Controls.Add(this.loginPanel2no1);
             this.Controls.Add(this.sightTestPanel);
+            this.Controls.Add(this.loginPanel2no1);
             this.Controls.Add(this.intervieweeProfilePageJD1);
             this.Controls.Add(this.allProfilePage1no1);
             this.Controls.Add(this.JDTestResultsPanel);
@@ -1201,7 +1202,7 @@
         private System.Windows.Forms.Button button17;
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.Button button26;
+        private System.Windows.Forms.Button test1BackButton;
     }
 }
 
