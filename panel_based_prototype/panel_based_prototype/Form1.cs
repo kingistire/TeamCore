@@ -19,6 +19,7 @@ namespace panel_based_prototype
         private Button aLittleBtn;
         private Button aLotBtn;
         private Label[] test1label = new Label[7];
+
         private bool enableTTS = false;
 
         public Form1()
@@ -96,8 +97,8 @@ namespace panel_based_prototype
         private void imagePanel1_Click(object sender, EventArgs e) {
             aLittleBtn = new Button();
             aLotBtn = new Button();
-            aLotBtn.Text = "A Lot";
-            aLittleBtn.Text = "A Little"; 
+            aLotBtn.Text = "A Little";
+            aLittleBtn.Text = "A Lot"; 
             aLittle.Show();
             aLot.Show();
             aLittleBtn.Visible = true;
@@ -388,8 +389,15 @@ namespace panel_based_prototype
         }
 
         private void button1_Click(object sender, EventArgs e) {
-            AddComments addComments = new AddComments();
+            AddComments addComments = new AddComments(this);
+            JDTestResultsPanel.BringToFront();
             addComments.Show();
+        }
+
+        public void SetLabelText(string text)
+        {
+            label14.Visible = true;
+            this.label14.Text = text;
         }
     }
 }

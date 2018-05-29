@@ -111,6 +111,10 @@
             this.sightPic5 = new System.Windows.Forms.PictureBox();
             this.sightPic3 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.loginPanel2no1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -300,44 +304,44 @@
             // 
             // testViewButton1
             // 
-            this.testViewButton1.Location = new System.Drawing.Point(730, 351);
+            this.testViewButton1.Location = new System.Drawing.Point(724, 351);
             this.testViewButton1.Margin = new System.Windows.Forms.Padding(2);
             this.testViewButton1.Name = "testViewButton1";
-            this.testViewButton1.Size = new System.Drawing.Size(86, 40);
+            this.testViewButton1.Size = new System.Drawing.Size(92, 40);
             this.testViewButton1.TabIndex = 10;
-            this.testViewButton1.Text = " View";
+            this.testViewButton1.Text = " View Summary";
             this.testViewButton1.UseVisualStyleBackColor = true;
             this.testViewButton1.Click += new System.EventHandler(this.testViewButton1_Click);
             // 
             // testCompleteButton1
             // 
-            this.testCompleteButton1.Location = new System.Drawing.Point(730, 295);
+            this.testCompleteButton1.Location = new System.Drawing.Point(724, 295);
             this.testCompleteButton1.Margin = new System.Windows.Forms.Padding(2);
             this.testCompleteButton1.Name = "testCompleteButton1";
-            this.testCompleteButton1.Size = new System.Drawing.Size(86, 40);
+            this.testCompleteButton1.Size = new System.Drawing.Size(92, 40);
             this.testCompleteButton1.TabIndex = 9;
-            this.testCompleteButton1.Text = "Complete";
+            this.testCompleteButton1.Text = "Start Interview";
             this.testCompleteButton1.UseVisualStyleBackColor = true;
             this.testCompleteButton1.Click += new System.EventHandler(this.testCompleteButton1_Click);
             // 
             // button15
             // 
-            this.button15.Location = new System.Drawing.Point(730, 410);
+            this.button15.Location = new System.Drawing.Point(724, 410);
             this.button15.Margin = new System.Windows.Forms.Padding(2);
             this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(86, 40);
+            this.button15.Size = new System.Drawing.Size(92, 40);
             this.button15.TabIndex = 8;
-            this.button15.Text = " View";
+            this.button15.Text = " View Summary";
             this.button15.UseVisualStyleBackColor = true;
             // 
             // button14
             // 
-            this.button14.Location = new System.Drawing.Point(730, 466);
+            this.button14.Location = new System.Drawing.Point(724, 466);
             this.button14.Margin = new System.Windows.Forms.Padding(2);
             this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(86, 40);
+            this.button14.Size = new System.Drawing.Size(92, 40);
             this.button14.TabIndex = 7;
-            this.button14.Text = " View";
+            this.button14.Text = " View Summary";
             this.button14.UseVisualStyleBackColor = true;
             // 
             // label5
@@ -398,6 +402,10 @@
             // soundTestPanel
             // 
             this.soundTestPanel.Controls.Add(this.test1BackButton);
+            this.soundTestPanel.Controls.Add(this.panel2);
+            this.soundTestPanel.Controls.Add(this.test1Btn);
+            this.soundTestPanel.Controls.Add(this.panel1);
+            this.soundTestPanel.Controls.Add(this.label15);
             this.soundTestPanel.Controls.Add(this.button16);
             this.soundTestPanel.Controls.Add(this.button17);
             this.soundTestPanel.Controls.Add(this.button24);
@@ -415,7 +423,6 @@
             this.soundTestPanel.Controls.Add(this.test1SelectImage6);
             this.soundTestPanel.Controls.Add(this.test1SelectImage3);
             this.soundTestPanel.Controls.Add(this.test1imagePanel4);
-            this.soundTestPanel.Controls.Add(this.test1Btn);
             this.soundTestPanel.Controls.Add(this.test1SelectImage5);
             this.soundTestPanel.Controls.Add(this.imagePanel1);
             this.soundTestPanel.Controls.Add(this.test1selectImage2);
@@ -446,7 +453,7 @@
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(75, 23);
             this.button16.TabIndex = 25;
-            this.button16.Text = "A Lot";
+            this.button16.Text = "A Little";
             this.button16.UseVisualStyleBackColor = true;
             this.button16.Visible = false;
             this.button16.Click += new System.EventHandler(this.button16_Click);
@@ -457,7 +464,7 @@
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(75, 23);
             this.button17.TabIndex = 26;
-            this.button17.Text = "A Little";
+            this.button17.Text = "A Lot";
             this.button17.UseVisualStyleBackColor = true;
             this.button17.Visible = false;
             this.button17.Click += new System.EventHandler(this.button17_Click);
@@ -468,7 +475,7 @@
             this.button24.Name = "button24";
             this.button24.Size = new System.Drawing.Size(75, 23);
             this.button24.TabIndex = 34;
-            this.button24.Text = "A Little";
+            this.button24.Text = "A Lot";
             this.button24.UseVisualStyleBackColor = true;
             this.button24.Visible = false;
             this.button24.Click += new System.EventHandler(this.button24_Click);
@@ -479,7 +486,7 @@
             this.button25.Name = "button25";
             this.button25.Size = new System.Drawing.Size(75, 23);
             this.button25.TabIndex = 33;
-            this.button25.Text = "A Lot";
+            this.button25.Text = "A Little";
             this.button25.UseVisualStyleBackColor = true;
             this.button25.Visible = false;
             this.button25.Click += new System.EventHandler(this.button25_Click);
@@ -490,7 +497,7 @@
             this.button22.Name = "button22";
             this.button22.Size = new System.Drawing.Size(75, 23);
             this.button22.TabIndex = 32;
-            this.button22.Text = "A Little";
+            this.button22.Text = "A Lot";
             this.button22.UseVisualStyleBackColor = true;
             this.button22.Visible = false;
             this.button22.Click += new System.EventHandler(this.button22_Click);
@@ -501,7 +508,7 @@
             this.button23.Name = "button23";
             this.button23.Size = new System.Drawing.Size(75, 23);
             this.button23.TabIndex = 31;
-            this.button23.Text = "A Lot";
+            this.button23.Text = "A Little";
             this.button23.UseVisualStyleBackColor = true;
             this.button23.Visible = false;
             this.button23.Click += new System.EventHandler(this.button23_Click);
@@ -512,7 +519,7 @@
             this.button20.Name = "button20";
             this.button20.Size = new System.Drawing.Size(75, 23);
             this.button20.TabIndex = 30;
-            this.button20.Text = "A Little";
+            this.button20.Text = "A Lot";
             this.button20.UseVisualStyleBackColor = true;
             this.button20.Visible = false;
             this.button20.Click += new System.EventHandler(this.button20_Click);
@@ -523,7 +530,7 @@
             this.button21.Name = "button21";
             this.button21.Size = new System.Drawing.Size(75, 23);
             this.button21.TabIndex = 29;
-            this.button21.Text = "A Lot";
+            this.button21.Text = "A Little";
             this.button21.UseVisualStyleBackColor = true;
             this.button21.Visible = false;
             this.button21.Click += new System.EventHandler(this.button21_Click);
@@ -534,7 +541,7 @@
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(75, 23);
             this.button18.TabIndex = 28;
-            this.button18.Text = "A Little";
+            this.button18.Text = "A Lot";
             this.button18.UseVisualStyleBackColor = true;
             this.button18.Visible = false;
             this.button18.Click += new System.EventHandler(this.button18_Click);
@@ -545,7 +552,7 @@
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(75, 23);
             this.button19.TabIndex = 27;
-            this.button19.Text = "A Lot";
+            this.button19.Text = "A Little";
             this.button19.UseVisualStyleBackColor = true;
             this.button19.Visible = false;
             this.button19.Click += new System.EventHandler(this.button19_Click);
@@ -677,6 +684,7 @@
             // 
             // JDTestResultsPanel
             // 
+            this.JDTestResultsPanel.Controls.Add(this.label14);
             this.JDTestResultsPanel.Controls.Add(this.JDTestReturnToProfileButton);
             this.JDTestResultsPanel.Controls.Add(this.pictureBox6);
             this.JDTestResultsPanel.Location = new System.Drawing.Point(1, 0);
@@ -1078,17 +1086,53 @@
             this.pictureBox7.TabIndex = 0;
             this.pictureBox7.TabStop = false;
             // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(437, 304);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(60, 20);
+            this.label14.TabIndex = 2;
+            this.label14.Text = "label14";
+            this.label14.Visible = false;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.label15.Location = new System.Drawing.Point(904, 212);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(0, 13);
+            this.label15.TabIndex = 37;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panel1.Location = new System.Drawing.Point(893, 239);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(74, 165);
+            this.panel1.TabIndex = 38;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panel2.Location = new System.Drawing.Point(5, 235);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(74, 165);
+            this.panel2.TabIndex = 39;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(983, 607);
+            this.Controls.Add(this.JDTestResultsPanel);
             this.Controls.Add(this.soundTestPanel);
+            this.Controls.Add(this.intervieweeProfilePageJD1);
             this.Controls.Add(this.sightTestPanel);
             this.Controls.Add(this.loginPanel2no1);
-            this.Controls.Add(this.intervieweeProfilePageJD1);
             this.Controls.Add(this.allProfilePage1no1);
-            this.Controls.Add(this.JDTestResultsPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
@@ -1104,8 +1148,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.soundTestPanel.ResumeLayout(false);
+            this.soundTestPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.JDTestResultsPanel.ResumeLayout(false);
+            this.JDTestResultsPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.sightTestPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.sightPic1)).EndInit();
@@ -1203,6 +1249,10 @@
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Button test1BackButton;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label15;
     }
 }
 

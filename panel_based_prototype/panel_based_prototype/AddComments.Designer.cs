@@ -45,11 +45,11 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(296, 489);
+            this.button1.Location = new System.Drawing.Point(241, 489);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(117, 59);
+            this.button1.Size = new System.Drawing.Size(172, 59);
             this.button1.TabIndex = 1;
-            this.button1.Text = "Save Comment";
+            this.button1.Text = "Save Comment and Continue to Summary";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Visible = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);

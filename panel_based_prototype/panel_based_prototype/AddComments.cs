@@ -11,21 +11,22 @@ using System.Windows.Controls;
 
 namespace panel_based_prototype {
     public partial class AddComments : Form {
-        public AddComments() {
+        private Form1 form1;
+
+        public AddComments(Form1 form1) {
             InitializeComponent();
+            this.form1 = form1;
             if(MessageBox.Show("You have completed the interview!", "Completed the interview!", MessageBoxButtons.OK) == DialogResult.OK) {
                 button1.Visible = true;
                 textBox1.Visible = true;
             }
         }
 
-
-
+        public string getText() {
+            return this.textBox1.Text;
+        }
 
         private void button1_Click(object sender, EventArgs e) {
-            Form1 f1 = new Form1();
-            f1.Show();
-            f1.bringSummaryToFront();
             label2.Text = textBox1.Text;
             label2.Visible = true;
             label3.Visible = true;
@@ -33,6 +34,7 @@ namespace panel_based_prototype {
             pictureBox1.Visible = true;
             label2.BringToFront();
             label3.BringToFront();
+            form1.SetLabelText(textBox1.Text);
         }
     }
 }
