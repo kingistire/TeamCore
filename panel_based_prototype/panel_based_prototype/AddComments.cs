@@ -27,14 +27,8 @@ namespace panel_based_prototype {
         }
 
         private void button1_Click(object sender, EventArgs e) {
-            label2.Text = textBox1.Text;
-            label2.Visible = true;
-            label3.Visible = true;
-            pictureBox1.BringToFront();
-            pictureBox1.Visible = true;
-            label2.BringToFront();
-            label3.BringToFront();
             form1.SetLabelText(textBox1.Text);
+            this.Close();
         }
     }
 }
