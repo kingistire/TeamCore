@@ -51,7 +51,10 @@ namespace panel_based_prototype
             JDTestResultsPanel.BringToFront();
         }
 
-
+        public void bringSummaryToFront()
+        {
+            JDTestResultsPanel.BringToFront();
+        }
 
         //private void selectImage_Click(object sender, EventArgs e)
         //{

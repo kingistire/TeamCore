@@ -61,10 +61,10 @@
             this.label1.Location = new System.Drawing.Point(62, 25);
             this.label1.MaximumSize = new System.Drawing.Size(600, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(576, 52);
+            this.label1.Size = new System.Drawing.Size(552, 52);
             this.label1.TabIndex = 2;
-            this.label1.Text = "As the Occupational Therapist, would you like to add additional comments about th" +
-    "e interview?";
+            this.label1.Text = "As the Interviewer, would you like to add additional comments about the interview" +
+    "?";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // pictureBox1
